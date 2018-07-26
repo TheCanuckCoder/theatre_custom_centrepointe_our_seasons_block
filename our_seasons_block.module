@@ -1,0 +1,7 @@
+<?php
+/**
+ * @file
+ * Code for the Our Seasons Block feature.
+ */
+
+include_once 'our_seasons_block.features.inc';
