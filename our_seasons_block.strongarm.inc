@@ -40,6 +40,18 @@ function our_seasons_block_strongarm() {
       'revision' => array(
         'custom_settings' => FALSE,
       ),
+      'event_report' => array(
+        'custom_settings' => FALSE,
+      ),
+      'event_report_guest_services' => array(
+        'custom_settings' => FALSE,
+      ),
+      'event_report_patron_services' => array(
+        'custom_settings' => FALSE,
+      ),
+      'event_report_production' => array(
+        'custom_settings' => FALSE,
+      ),
     ),
     'extra_fields' => array(
       'form' => array(
@@ -47,7 +59,7 @@ function our_seasons_block_strongarm() {
           'weight' => '1',
         ),
         'metatags' => array(
-          'weight' => '7',
+          'weight' => '8',
         ),
         'title' => array(
           'weight' => '0',
@@ -65,7 +77,7 @@ function our_seasons_block_strongarm() {
       'display' => array(
         'language' => array(
           'default' => array(
-            'weight' => '10',
+            'weight' => '11',
             'visible' => FALSE,
           ),
         ),
@@ -119,6 +131,34 @@ function our_seasons_block_strongarm() {
   $strongarm->name = 'node_submitted_our_seasons_block';
   $strongarm->value = 0;
   $export['node_submitted_our_seasons_block'] = $strongarm;
+
+  $strongarm = new stdClass();
+  $strongarm->disabled = FALSE; /* Edit this to true to make a default strongarm disabled initially */
+  $strongarm->api_version = 1;
+  $strongarm->name = 'pathauto_node_our_seasons_block_en_pattern';
+  $strongarm->value = '';
+  $export['pathauto_node_our_seasons_block_en_pattern'] = $strongarm;
+
+  $strongarm = new stdClass();
+  $strongarm->disabled = FALSE; /* Edit this to true to make a default strongarm disabled initially */
+  $strongarm->api_version = 1;
+  $strongarm->name = 'pathauto_node_our_seasons_block_fr_pattern';
+  $strongarm->value = '';
+  $export['pathauto_node_our_seasons_block_fr_pattern'] = $strongarm;
+
+  $strongarm = new stdClass();
+  $strongarm->disabled = FALSE; /* Edit this to true to make a default strongarm disabled initially */
+  $strongarm->api_version = 1;
+  $strongarm->name = 'pathauto_node_our_seasons_block_pattern';
+  $strongarm->value = '';
+  $export['pathauto_node_our_seasons_block_pattern'] = $strongarm;
+
+  $strongarm = new stdClass();
+  $strongarm->disabled = FALSE; /* Edit this to true to make a default strongarm disabled initially */
+  $strongarm->api_version = 1;
+  $strongarm->name = 'pathauto_node_our_seasons_block_und_pattern';
+  $strongarm->value = '';
+  $export['pathauto_node_our_seasons_block_und_pattern'] = $strongarm;
 
   $strongarm = new stdClass();
   $strongarm->disabled = FALSE; /* Edit this to true to make a default strongarm disabled initially */
